@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A responsive single-page menu for the Module 3 coding assignment.">
+    <title>Our Menu | Food, LLC</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default" aria-label="Main navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button id="menu-toggle" class="navbar-toggle collapsed visible-xs" type="button"
+                    aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle menu">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#our-menu">Food, LLC</a>
+          </div>
+
+          <div id="mobile-menu" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="#menu-content" data-menu="chicken" aria-current="true">Chicken</a></li>
+              <li><a href="#menu-content" data-menu="beef">Beef</a></li>
+              <li><a href="#menu-content" data-menu="sushi">Sushi</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <h1 id="our-menu" class="text-center">Our Menu</h1>
+      <div class="row">
+        <div class="col-xs-12">
+          <section id="menu-content" class="menu-panel" aria-labelledby="menu-title">
+            <h2 id="menu-title" class="text-center">Chicken</h2>
+            <div id="menu-description">
+              <p>Our chicken selection brings together familiar flavors and careful preparation. Each plate begins with tender chicken, thoughtfully seasoned and cooked until it is ready to serve.</p>
+              <p>Choose a simple grilled favorite, a gently spiced option, or a comforting dish to share. Fresh ingredients and balanced sides make the menu welcoming for a quick lunch or a relaxed dinner.</p>
+              <p>We believe good food should be easy to enjoy. Take a moment to explore the menu, find a favorite, and come back whenever you are ready for another meal at Food, LLC.</p>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
